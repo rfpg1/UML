@@ -1,0 +1,481 @@
+openapi: 3.0.0
+info:
+  title: D.R.O.N.E
+  description: The API for the D.R.O.N.E project
+  version: 1.0.0
+servers:
+- url: https://virtserver.swaggerhub.com/RICARDOMACHADO1000/DRONE/1.0.0
+  description: SwaggerHub API Auto Mocking
+paths:
+  /users/found:
+    get:
+      tags:
+      - Users
+      responses:
+        "200":
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Client'
+      x-swagger-router-controller: Users
+  /users/served:
+    get:
+      tags:
+      - Users
+      responses:
+        "200":
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Client'
+      x-swagger-router-controller: Users
+  /users/random:
+    get:
+      tags:
+      - Users
+      responses:
+        "200":
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RandomClient'
+      x-swagger-router-controller: Users
+  /drones:
+    get:
+      tags:
+      - Drones
+      description: Retrieves a list of drones available in the system.
+      parameters:
+      - name: id
+        in: query
+        description: The ID of the basestation to retrieve drones from.
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DroneResponse'
+      x-swagger-router-controller: Drones
+  /drones/new:
+    post:
+      tags:
+      - Drones
+      description: Creates a new Drone
+      parameters:
+      - name: id
+        in: query
+        description: The ID of the basestation it is in.
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewDroneDTO'
+        required: true
+      responses:
+        "200":
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DroneDTO'
+        "400":
+          description: Bad request. Drone ID already exists.
+      x-swagger-router-controller: Drones
+  /drones/{droneId}/status:
+    get:
+      tags:
+      - Drones
+      description: Get status of a drone
+      parameters:
+      - name: id
+        in: query
+        description: The ID of the basestation it is in.
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      - name: droneId
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DroneDTO'
+        "400":
+          description: Bad request. Drone ID does not exist.
+      x-swagger-router-controller: Drones
+  /drones/{droneId}/position:
+    put:
+      tags:
+      - Drones
+      parameters:
+      - name: id
+        in: query
+        description: The ID of the basestation it is in.
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      - name: droneId
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+          format: int32
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateDroneDTO'
+        required: true
+      responses:
+        "200":
+          description: ok
+        "400":
+          description: Bad request. Drone ID does not exist.
+      x-swagger-router-controller: Drones
+  /drones/{droneId}/clients:
+    put:
+      tags:
+      - Drones
+      parameters:
+      - name: id
+        in: query
+        description: The ID of the basestation it is in.
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      - name: droneId
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+          format: int32
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions'
+        required: true
+      responses:
+        "200":
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DroneDTO'
+        "400":
+          description: Bad Request. Drone ID does not exist.
+      x-swagger-router-controller: Drones
+  /drones/{droneId}/launch:
+    put:
+      tags:
+      - Drones
+      parameters:
+      - name: id
+        in: query
+        description: The ID of the basestation it is in.
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      - name: droneId
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DroneDTO'
+        "400":
+          description: Bad Request. Drone ID does not exist.
+      x-swagger-router-controller: Drones
+  /drones/{droneId}/searchPositions:
+    get:
+      tags:
+      - Drones
+      parameters:
+      - name: id
+        in: query
+        description: The ID of the basestation it is in.
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      - name: droneId
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Positions'
+        "400":
+          description: Bad request. Drone ID does not exist.
+      x-swagger-router-controller: Drones
+  /drones/{droneId}/searchedPositions:
+    get:
+      tags:
+      - Drones
+      parameters:
+      - name: id
+        in: query
+        description: The ID of the basestation it is in.
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      - name: droneId
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Positions'
+        "400":
+          description: Bad request. Drone ID does not exist.
+      x-swagger-router-controller: Drones
+  /drones/{droneId}/landPositions:
+    get:
+      tags:
+      - Drones
+      parameters:
+      - name: id
+        in: query
+        description: The ID of the basestation it is in.
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      - name: droneId
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LandPositionsResponse'
+        "400":
+          description: Bad request. Drone ID does not exist.
+      x-swagger-router-controller: Drones
+  /basestation:
+    post:
+      tags:
+      - BaseStation
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewBaseStationDTO'
+        required: true
+      responses:
+        "200":
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseStationDTO'
+      x-swagger-router-controller: BaseStation
+  /basestations:
+    get:
+      tags:
+      - BaseStation
+      responses:
+        "200":
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseStationsDTO'
+      x-swagger-router-controller: BaseStation
+  /basestation/{baseStationdId}:
+    get:
+      tags:
+      - BaseStation
+      parameters:
+      - name: baseStationdId
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseStationDTO'
+      x-swagger-router-controller: BaseStation
+components:
+  schemas:
+    BaseStationsDTO:
+      type: array
+      items:
+        $ref: '#/components/schemas/BaseStationDTO'
+    BaseStationDTO:
+      type: object
+      properties:
+        position:
+          $ref: '#/components/schemas/Position'
+        range:
+          type: number
+          format: double
+    NewBaseStationDTO:
+      type: object
+      properties:
+        position:
+          $ref: '#/components/schemas/Position'
+        range:
+          type: number
+          format: double
+        id:
+          type: integer
+          format: int32
+    RandomClient:
+      type: object
+      properties:
+        position:
+          $ref: '#/components/schemas/Position'
+    UpdateDroneDTO:
+      type: object
+      properties:
+        position:
+          $ref: '#/components/schemas/Position'
+        mission:
+          type: integer
+          format: int32
+    NewDroneDTO:
+      type: object
+      properties:
+        strategy:
+          type: string
+        position:
+          $ref: '#/components/schemas/Position'
+        id:
+          type: integer
+          format: int32
+        weight:
+          type: number
+          format: double
+    LandPositionsResponse:
+      type: object
+      properties:
+        ids:
+          type: array
+          items:
+            type: integer
+            format: int32
+        positions:
+          type: array
+          items:
+            $ref: '#/components/schemas/Position'
+    DroneResponse:
+      type: array
+      items:
+        $ref: '#/components/schemas/DroneDTO'
+    Positions:
+      type: array
+      items:
+        $ref: '#/components/schemas/Position'
+    DroneDTO:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+        position:
+          $ref: '#/components/schemas/Position'
+        clientesFound:
+          type: array
+          items:
+            $ref: '#/components/schemas/Position'
+        clientesServed:
+          type: array
+          items:
+            $ref: '#/components/schemas/Position'
+        positionsToSearch:
+          $ref: '#/components/schemas/Position'
+        launched:
+          type: boolean
+    Position:
+      type: object
+      properties:
+        x:
+          type: integer
+          format: int32
+        "y":
+          type: integer
+          format: int32
+    Client:
+      type: object
+      properties:
+        position:
+          $ref: '#/components/schemas/Position'
+        served:
+          type: boolean
