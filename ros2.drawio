@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.16" pages="2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Ros2">
     <mxGraphModel dx="3949" dy="2171" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -651,10 +651,165 @@
     </mxGraphModel>
   </diagram>
   <diagram id="BQX-F6oB1hg1IkZUYBr3" name="API">
-    <mxGraphModel dx="4151" dy="1603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2004" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5dVY0MYAnw5oQavr-Wza-1" target="5dVY0MYAnw5oQavr-Wza-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5dVY0MYAnw5oQavr-Wza-1" target="5dVY0MYAnw5oQavr-Wza-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-1" value="Web-app" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="293" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5dVY0MYAnw5oQavr-Wza-2" target="5dVY0MYAnw5oQavr-Wza-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="240" />
+              <mxPoint x="370" y="308" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5dVY0MYAnw5oQavr-Wza-2" target="5dVY0MYAnw5oQavr-Wza-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5dVY0MYAnw5oQavr-Wza-2" target="5dVY0MYAnw5oQavr-Wza-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="190" />
+              <mxPoint x="250" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5dVY0MYAnw5oQavr-Wza-2" target="5dVY0MYAnw5oQavr-Wza-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="330" />
+              <mxPoint x="670" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5dVY0MYAnw5oQavr-Wza-2" target="5dVY0MYAnw5oQavr-Wza-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-2" value="Ground Station" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5dVY0MYAnw5oQavr-Wza-3" target="5dVY0MYAnw5oQavr-Wza-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;" edge="1" parent="1" source="5dVY0MYAnw5oQavr-Wza-3" target="5dVY0MYAnw5oQavr-Wza-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="500" />
+              <mxPoint x="730" y="500" />
+              <mxPoint x="730" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-3" value="API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="278" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="5dVY0MYAnw5oQavr-Wza-4" target="5dVY0MYAnw5oQavr-Wza-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="770" y="450" />
+              <mxPoint x="770" y="345" />
+              <mxPoint x="780" y="345" />
+              <mxPoint x="780" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-4" value="Drones" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-6" value="1. Register Ground Stations" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="410" y="140" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-7" value="2. Register Drones" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="410" y="98" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-11" value="1.1 Register itself" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="370" y="218" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-13" value="*ver nota 1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="413" y="160" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-15" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Notas&lt;/h1&gt;&lt;p&gt;1. O passo 1 é feito para todas as ground stations&lt;/p&gt;&lt;p&gt;2. A fronteira é definir por todos os pontos que se encontram a X de distância da GS ou de um drone e que vão fazer com que a área descoberta aumente&lt;/p&gt;&lt;p&gt;3. O passo 2 é feito para todos os drones da GS&lt;/p&gt;&lt;p&gt;4. O pedido por posições a explorar pode ser feito em simultâneo pelas várias GS&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="880" y="98" width="180" height="282" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-18" value="2.1 Let the ground station&amp;nbsp;&lt;div&gt;responsible for this drone&amp;nbsp;&lt;/div&gt;&lt;div&gt;know that he is alive&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="493" y="350" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-19" value="2.2 Register the drone" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="374" y="248" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-20" value="*ver nota 3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="420" y="80" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5dVY0MYAnw5oQavr-Wza-3" target="5dVY0MYAnw5oQavr-Wza-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="370" />
+              <mxPoint x="320" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-22" value="1.2 Define Frontier" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="370" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-24" value="*ver nota 2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="390" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-26" value="3. Ask for positions to search" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="293" y="198" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-28" value="3.1 Return positions to search" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="350" y="320" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-29" value="*ver nota 4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="360" y="340" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-31" value="4. Ask for positions to land" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="90" y="225" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="291" as="sourcePoint" />
+            <mxPoint x="230" y="309" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="170" y="291" />
+              <mxPoint x="170" y="310" />
+              <mxPoint x="210" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-33" value="4.1 Wait for every GS&amp;nbsp;&lt;div&gt;to ask for positions to land&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="310" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-36" value="3.2 Send&amp;nbsp;&lt;div&gt;positions&lt;/div&gt;&lt;div&gt;&amp;nbsp;to search&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="600" y="270" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-37" value="4.2 Send positions to land" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="290" y="498" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-39" value="4.3 Send positions to land" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="660" y="188" width="160" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
