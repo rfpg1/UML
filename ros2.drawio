@@ -778,8 +778,8 @@
         <mxCell id="5dVY0MYAnw5oQavr-Wza-26" value="3. Ask for positions to search" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="293" y="198" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="5dVY0MYAnw5oQavr-Wza-28" value="3.1 Return positions to search" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="350" y="320" width="180" height="30" as="geometry" />
+        <mxCell id="5dVY0MYAnw5oQavr-Wza-28" value="3.1 Return closest frontier to GS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="345" y="320" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5dVY0MYAnw5oQavr-Wza-29" value="*ver nota 4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="360" y="340" width="80" height="30" as="geometry" />
